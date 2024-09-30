@@ -58,6 +58,37 @@ p {
 	font-size: 1.6rem;
 	line-height: 1.8;
 }
+
+section {
+	min-width: 37rem;
+	padding: 1.6rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.section__titulo {
+	font-size: 4.8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	text-align: center;
+
+}
+
+.section__titulo--destaque {
+	color: var(--clr-medium-green);
+}
+
+
+@media screen and (min-width: 1170px) {
+	section {
+		padding: 1.6rem calc((100% - 117rem) / 2);
+	}
+}
+
        
 /**********************************/
 /* 2. Navbar
@@ -247,12 +278,106 @@ p {
 /* 4. Sobre Nós
 /**********************************/
 
+.sobre-texto {
+	margin-top: 1.6rem;
+}
 
+.sobre-texto__titulo{
+	font-size: 2.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: .8rem;
+}
+
+
+@media screen and (min-width: 768px) {
+	.sobre-c {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.sobre-texto {
+		flex:  6 1 1rem;
+		margin-left: 1.5rem;
+	}
+
+	.sobre-c__img {
+		flex: 1 1 1rem;
+		margin-right: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.sobre {
+		height: 100vh;
+	}
+
+}
 
 /**********************************/
 /* 5. Diferenciais
 /**********************************/
 
+ .diferenciais {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+ }
+
+ .diferencial + .diferencial {
+   margin-top: 1.6rem;
+ }
+
+ .diferencial__titulo {
+	font-size: 2.4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+ }
+
+ .diferencial__descricao {
+	width: 28.8rem;
+ }
+
+ .diferencial__titulo::before {
+	content: "\f555";
+	background: black;
+	color: #fff;
+	padding: 1rem;
+	margin-right: .8rem;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	font-size: 3.6rem;
+ }
+
+ .diferencial__titulo__carteira::before {
+	content: "\f555";
+ }
+
+ 
+ .diferencial__titulo--mapa::before {
+	content: "\f5a0";
+ }
+
+ .diferencial__titulo--meias::before {
+	content: "\f696";
+ }
+
+ @media screen and (min-width: 625px) {
+	.diferenciais {
+		justify-content: space-between;
+	}
+
+	.diferencial + .diferencial {
+		margin-top: 0;
+	  }
+ }
+
+ section:nth-child(even){
+     background: var(--clr-light-green);
+ }
 
 
 /**********************************/
