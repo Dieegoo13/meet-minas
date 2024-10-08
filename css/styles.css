@@ -774,6 +774,11 @@ info-body {
   opacity: 0;
 } 
 
+
+.slider-thumbs__img--active.slider-thumbs__img::before {
+	opacity: 0;
+  } 
+
 @media screen and (min-width: 648px){
 	.modal {
 		padding: 5.6rem;

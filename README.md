@@ -1,2 +1,2 @@
 # meet-minas
- site de uma agência fictício de viagens e turismo em Minas Gerais 
+ site de uma agência fictícia de viagens e turismo em Minas Gerais.
